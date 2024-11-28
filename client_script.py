@@ -6,9 +6,9 @@ BASE_URL = "http://127.0.0.1:8000/api/products/"
 def add_product():
     print("Attempting to add product...")  # Debugging print statement
     product = {
-        "name": "Ipad Pro",
-        "description": "A powerful tablet with IOS 18",
-        "price": 1600.00
+        "name": "Nikon Camera",
+        "description": "A high-quality camera",
+        "price": 1800.00
     }
     response = requests.post(BASE_URL + "create/", json=product)
     if response.status_code == 201:
